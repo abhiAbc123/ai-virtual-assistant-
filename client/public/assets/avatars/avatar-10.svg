@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad10" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#14532d"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="limeGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#bef264"/>
+      <stop offset="50%" stop-color="#84cc16"/>
+      <stop offset="100%" stop-color="#4d7c0f"/>
+    </linearGradient>
+    <filter id="limeGlow10" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad10)"/>
+  
+  <!-- Digital Matrix Data Streams -->
+  <line x1="90" y1="40" x2="90" y2="120" stroke="#84cc16" stroke-width="2" stroke-dasharray="8 4 12 4" stroke-opacity="0.5"/>
+  <line x1="310" y1="40" x2="310" y2="120" stroke="#84cc16" stroke-width="2" stroke-dasharray="12 4 6 4" stroke-opacity="0.5"/>
+  <line x1="60" y1="280" x2="60" y2="360" stroke="#84cc16" stroke-width="2" stroke-dasharray="6 4 14 4" stroke-opacity="0.5"/>
+  <line x1="340" y1="280" x2="340" y2="360" stroke="#84cc16" stroke-width="2" stroke-dasharray="10 4 8 4" stroke-opacity="0.5"/>
+
+  <!-- Radar HUD Circles -->
+  <circle cx="200" cy="200" r="170" stroke="#84cc16" stroke-width="1.5" stroke-dasharray="25 15" stroke-opacity="0.4" fill="none"/>
+  <circle cx="200" cy="200" r="140" stroke="#bef264" stroke-width="1" stroke-dasharray="5 10" stroke-opacity="0.3" fill="none"/>
+
+  <!-- Heavy Cyber Chassis -->
+  <path d="M 135 340 L 160 275 L 240 275 L 265 340 L 330 380 L 70 380 Z" fill="#166534" stroke="url(#limeGrad)" stroke-width="2.5"/>
+  <rect x="180" y="295" width="40" height="25" rx="4" fill="#84cc16" filter="url(#limeGlow10)" opacity="0.9"/>
+  <line x1="190" y1="307" x2="210" y2="307" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Robot Matrix Head Base -->
+  <path d="M 135 150 C 135 85 265 85 265 150 C 265 235 245 270 200 270 C 155 270 135 235 135 150 Z" fill="#0f172a" stroke="url(#limeGrad)" stroke-width="4"/>
+  
+  <!-- Cybernetic Hex Eyepiece & Visor -->
+  <polygon points="145,150 175,135 225,135 255,150 245,190 200,205 155,190" fill="#14532d" stroke="#84cc16" stroke-width="2" filter="url(#limeGlow10)"/>
+
+  <!-- Matrix Slit Eyes -->
+  <rect x="160" y="155" width="30" height="8" rx="2" fill="#bef264" filter="url(#limeGlow10)"/>
+  <rect x="210" y="155" width="30" height="8" rx="2" fill="#bef264" filter="url(#limeGlow10)"/>
+  <line x1="165" y1="159" x2="185" y2="159" stroke="#ffffff" stroke-width="2"/>
+  <line x1="215" y1="159" x2="235" y2="159" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Forehead Uplink Antenna -->
+  <line x1="200" y1="85" x2="200" y2="55" stroke="#84cc16" stroke-width="3" filter="url(#limeGlow10)"/>
+  <circle cx="200" cy="50" r="6" fill="#bef264" filter="url(#limeGlow10)"/>
+  <circle cx="200" cy="50" r="2.5" fill="#ffffff"/>
+</svg>

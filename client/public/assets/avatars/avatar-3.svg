@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad3" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#2e1065"/>
+      <stop offset="100%" stop-color="#090014"/>
+    </radialGradient>
+    <linearGradient id="purplePlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="50%" stop-color="#9333ea"/>
+      <stop offset="100%" stop-color="#3b0764"/>
+    </linearGradient>
+    <filter id="purpleGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad3)"/>
+  
+  <!-- Cyber Matrix Circuit Holograms -->
+  <g stroke="#d946ef" stroke-width="1.2" opacity="0.4" fill="none">
+    <rect x="40" y="50" width="60" height="40" stroke-dasharray="4 2"/>
+    <rect x="300" y="50" width="60" height="40" stroke-dasharray="4 2"/>
+    <circle cx="70" cy="70" r="10"/>
+    <circle cx="330" cy="70" r="10"/>
+    <path d="M 100 70 L 140 70 L 150 110 M 300 70 L 260 70 L 250 110"/>
+  </g>
+  <circle cx="200" cy="200" r="180" stroke="#a855f7" stroke-width="1.5" stroke-dasharray="15 8" opacity="0.6" fill="none"/>
+
+  <!-- Neck Structure with Carbon Fiber -->
+  <path d="M 160 270 L 150 360 L 250 360 L 240 270 Z" fill="#1e1b4b" stroke="#a855f7" stroke-width="2"/>
+  <line x1="180" y1="280" x2="175" y2="350" stroke="#d946ef" stroke-width="2"/>
+  <line x1="220" y1="280" x2="225" y2="350" stroke="#d946ef" stroke-width="2"/>
+
+  <!-- Cyber Face -->
+  <path d="M 140 140 C 140 80 260 80 260 140 C 260 220 240 265 200 265 C 160 265 140 220 140 140 Z" fill="#0f172a" stroke="url(#purplePlate)" stroke-width="3"/>
+
+  <!-- Glowing Cyber Optical Sensors / Eyes -->
+  <ellipse cx="170" cy="150" rx="15" ry="8" fill="#d946ef" filter="url(#purpleGlow)"/>
+  <ellipse cx="230" cy="150" rx="15" ry="8" fill="#d946ef" filter="url(#purpleGlow)"/>
+  <circle cx="170" cy="150" r="4" fill="#ffffff"/>
+  <circle cx="230" cy="150" r="4" fill="#ffffff"/>
+
+  <!-- Forehead Sensor Array -->
+  <circle cx="200" cy="100" r="14" fill="#581c87" stroke="#d946ef" stroke-width="2"/>
+  <circle cx="200" cy="100" r="6" fill="#f472b6" filter="url(#purpleGlow)"/>
+
+  <!-- Facial Circuit Inlays -->
+  <path d="M 155 170 L 160 210 L 180 225 M 245 170 L 240 210 L 220 225" stroke="#c084fc" stroke-width="1.5" fill="none" filter="url(#purpleGlow)"/>
+</svg>

@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad8" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#4c0519"/>
+      <stop offset="100%" stop-color="#020617"/>
+    </radialGradient>
+    <linearGradient id="roseGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af"/>
+      <stop offset="50%" stop-color="#f43f5e"/>
+      <stop offset="100%" stop-color="#be123c"/>
+    </linearGradient>
+    <filter id="roseGlow8" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <!-- Background -->
+  <rect width="400" height="400" fill="url(#bgGrad8)"/>
+  
+  <!-- Outer Holographic Mandala -->
+  <polygon points="200,25 325,75 375,200 325,325 200,375 75,325 25,200 75,75" stroke="#f43f5e" stroke-width="1.5" stroke-opacity="0.4" fill="none"/>
+  <circle cx="200" cy="200" r="160" stroke="#fda4af" stroke-width="1" stroke-dasharray="15 8" stroke-opacity="0.3" fill="none"/>
+
+  <!-- Neck & Shoulders with Wing Crests -->
+  <path d="M 140 330 L 165 270 L 235 270 L 260 330 L 330 380 L 70 380 Z" fill="#881337" stroke="url(#roseGrad)" stroke-width="2"/>
+  <polygon points="180,290 220,290 200,340" fill="#f43f5e" filter="url(#roseGlow8)"/>
+
+  <!-- Winged Headpiece / Crown -->
+  <polygon points="200,60 225,110 260,85 245,135 200,120 155,135 140,85 175,110" fill="url(#roseGrad)" filter="url(#roseGlow8)"/>
+
+  <!-- Sleek Android Face -->
+  <path d="M 145 140 C 145 95 255 95 255 140 C 255 210 240 255 200 255 C 160 255 145 210 145 140 Z" fill="#0f172a" stroke="url(#roseGrad)" stroke-width="3"/>
+  
+  <!-- Glowing Luminous Eyes -->
+  <path d="M 160 160 Q 180 150 190 165 Q 175 175 160 160 Z" fill="#fda4af" filter="url(#roseGlow8)"/>
+  <path d="M 240 160 Q 220 150 210 165 Q 225 175 240 160 Z" fill="#fda4af" filter="url(#roseGlow8)"/>
+  <circle cx="178" cy="162" r="3" fill="#ffffff"/>
+  <circle cx="222" cy="162" r="3" fill="#ffffff"/>
+
+  <!-- Cheek Decals -->
+  <line x1="150" y1="185" x2="170" y2="200" stroke="#f43f5e" stroke-width="2"/>
+  <line x1="250" y1="185" x2="230" y2="200" stroke="#f43f5e" stroke-width="2"/>
+
+  <!-- Smile Hologram Line -->
+  <path d="M 185 215 Q 200 225 215 215" stroke="#fda4af" stroke-width="2" stroke-linecap="round" fill="none" filter="url(#roseGlow8)"/>
+</svg>

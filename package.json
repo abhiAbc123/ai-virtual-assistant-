@@ -1,0 +1,31 @@
+{
+  "name": "ai-virtual-assistant-mern",
+  "version": "1.0.0",
+  "description": "Full-Stack MERN AI Virtual Assistant with Gemini AI and Web Speech API",
+  "main": "server/server.js",
+  "scripts": {
+    "install:all": "npm install && npm install --prefix server && npm install --prefix client",
+    "server": "npm run dev --prefix server",
+    "client": "npm run dev --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "build": "npm run build --prefix client",
+    "start": "node server/server.js"
+  },
+  "keywords": [
+    "ai-assistant",
+    "jarvis",
+    "mern",
+    "gemini-ai",
+    "web-speech-api",
+    "speech-recognition",
+    "speech-synthesis",
+    "mongodb",
+    "jwt",
+    "cloudinary"
+  ],
+  "author": "",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^9.1.2"
+  }
+}

@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="100%" height="100%">
+  <defs>
+    <radialGradient id="bgGrad2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#030712"/>
+      <stop offset="100%" stop-color="#000000"/>
+    </radialGradient>
+    <linearGradient id="chromePlate" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#94a3b8"/>
+      <stop offset="80%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <filter id="neonBlueGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="7" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="400" height="400" fill="url(#bgGrad2)"/>
+  <!-- Sci-fi Data Streams -->
+  <line x1="80" y1="40" x2="80" y2="140" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.3"/>
+  <line x1="320" y1="40" x2="320" y2="140" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="8 6" opacity="0.3"/>
+  <circle cx="200" cy="200" r="175" stroke="#38bdf8" stroke-width="1.5" stroke-dasharray="25 10 5 10" opacity="0.4" fill="none"/>
+
+  <!-- Titanium Collar & Chassis -->
+  <path d="M 120 370 L 150 280 L 250 280 L 280 370 Z" fill="url(#chromePlate)" stroke="#38bdf8" stroke-width="1.5"/>
+  <path d="M 175 300 L 225 300 L 215 340 L 185 340 Z" fill="#0284c7" filter="url(#neonBlueGlow)" opacity="0.9"/>
+
+  <!-- Sleek Chrome Helmet / Mech Head -->
+  <path d="M 140 160 C 140 70 260 70 260 160 C 260 220 240 260 200 260 C 160 260 140 220 140 160 Z" fill="url(#chromePlate)" stroke="#e2e8f0" stroke-width="2"/>
+  
+  <!-- Sleek Angular Visor (Iron Man / Ultron blue glow) -->
+  <path d="M 155 155 L 185 165 L 200 155 L 215 165 L 245 155 L 235 145 L 200 148 L 165 145 Z" fill="#38bdf8" filter="url(#neonBlueGlow)"/>
+  <line x1="160" y1="155" x2="240" y2="155" stroke="#ffffff" stroke-width="2"/>
+
+  <!-- Ear Audio Pods -->
+  <rect x="125" y="145" width="12" height="40" rx="6" fill="#38bdf8" filter="url(#neonBlueGlow)" opacity="0.85"/>
+  <rect x="263" y="145" width="12" height="40" rx="6" fill="#38bdf8" filter="url(#neonBlueGlow)" opacity="0.85"/>
+
+  <!-- Chin Vent & Carbon Fiber Insets -->
+  <polygon points="185,210 215,210 210,240 190,240" fill="#0f172a" stroke="#38bdf8" stroke-width="1"/>
+  <line x1="190" y1="220" x2="210" y2="220" stroke="#38bdf8" stroke-width="1.5"/>
+  <line x1="193" y1="228" x2="207" y2="228" stroke="#38bdf8" stroke-width="1.5"/>
+</svg>

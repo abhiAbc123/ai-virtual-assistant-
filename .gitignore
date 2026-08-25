@@ -1,0 +1,38 @@
+# Dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# Environment Variables & Secrets
+.env
+.env.local
+.env.*.local
+server/.env
+client/.env
+
+# Database & SQLite files
+*.db
+*.db-journal
+server/dev.db
+server/prisma/*.db
+
+# Uploads & Temporary files
+server/uploads/*
+!server/uploads/.gitkeep
+dist/
+client/dist/
+dist-ssr/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Editor & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
