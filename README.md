@@ -4,7 +4,7 @@ An ultra-futuristic, intelligent AI Virtual Assistant built using the **MERN Sta
 
 ---
 
-https://ai-virtual-assistant-seven-blue.vercel.app
+https://github.com/abhiAbc123/ai-virtual-assistant-
 
 ## 🌟 Key Features
 
