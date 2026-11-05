@@ -4,7 +4,14 @@ An ultra-futuristic, intelligent AI Virtual Assistant built using the **MERN Sta
 
 ---
 
-https://github.com/abhiAbc123/ai-virtual-assistant-
+## 🌟 Live Deployments & Key Links
+
+| Resource | Link | Description |
+| :--- | :--- | :--- |
+| 🚀 **Production Web App** | [https://ai-virtual-assistant-seven-blue.vercel.app/](https://ai-virtual-assistant-seven-blue.vercel.app/) | Live single-page application hosted on Vercel with full client-side routing. |
+| 📁 **GitHub Source Code** | [https://github.com/abhiAbc123/ai-virtual-assistant-](https://github.com/abhiAbc123/ai-virtual-assistant-) | Public open-source repository containing frontend client and backend microservices. |
+
+---
 
 ## 🌟 Key Features
 
